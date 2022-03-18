@@ -7,18 +7,56 @@
   <body>
     <h1>input연습</h1>
     <hr>
-    <form>
+    <form name = "frm" action="inputOk.jsp" method="post">
+      <!--
+      get 방식과 post 방식의 차이점은 정보를 넘길 때
+      주소창에 정보가 보이느냐,
+      안보이느냐 차이이다.
+      get은 보이고,
+      post는 안보인다.
+      -->
       <fieldset>
-        <legend>여러가지 모양의 input tag</legend>
-    <input type="text" name="text-id" size="10" value=""><br>
-    <input type="password" name="text-password" size="10" value=""><br>
-    <input type="button" name="btn1" value="붜튼입니다"><br>
-    <input type="checkbox" name="hobby" value="야구">야구 <br>
-    <input type="checkbox" name="hobby" value="축구">축구 <br>
-    <input type="radio" name="gender" value="남성">남성 <br>
-    <input type="radio" name="gender" value="여성">여성 <br>
-    <input type="hidden" name="hid" value="dd">  <br>
+        <legend>여러가지 모양의 Input Tags</legend>
+    <input type="text" name="textid" size="10" value="" placeholder="ID">
+    <br>
+    <input type="password" name="text-password" size="10" value="">
+    <br>
+    <input type="button" name="btn1" value="붜튼입니다">
+    <br>
+    <input type="checkbox" name="hobby" value="야구">야구
+    <input type="checkbox" name="hobby" value="축구">축구
+    <br>
+    <input type="radio" name="gender" value="남성">남성
+    <input type="radio" name="gender" value="여성">여성
+    <br>
+    <input type="hidden" name="hid" value="dd">
+    <br>
+    <input type="date" name="date" value="2022-03-18">
+    <br>
+    <hr>
+    <textarea name="textarea" rows="8" cols="50"></textarea>
+    <br>
+    <hr>
+    <select  name="과일">
+      <option value="바나나" selected>바나나</option>
+      <option value="사과">사과</option>
+      <option value="딸기">딸기</option>
+    </select>
+      <br>
+      <input type = "text" list = "countries">
+      <datalist id = "countries">
+        <option value = "대한민국">
+        <option value = "일본">
+        <option value = "중국">
+      </datalist>
+      <br>
+      <input type="email" name="" value="" placeholder="email">
+      <br>
+      <input type="url" placeholder="http://">
+      <input type="submit" name="emit" value="제출">
     </fieldset>
-    <form>
+  </form>
+  <form>
+  만든이 : Kim's
   </body>
 </html>
